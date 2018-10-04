@@ -23,20 +23,25 @@ Arrivals and check-in, Curaçao Hilton
 ### Day 1 (Oct 19)
 
 * 8:00 AM - Registration
-* 8:30 - Introductions: Joe Lopez
-* 9:00 - Existing and Emerging Genomics Technologies: M. Eitel
-* 9:30 - Pac Bio: Jonas Korlach
-* 11:00 - Phylogenomics I: Giribet, Wörheide
-* Lunch 12:30-1:30   
-* 1:30 - Phylogenomics II: Giribet, Wörheide
-* 3:30-3:45 - Coffee Break 
-* 4:00 - Conservation Genomics Primer 1: I. Baums
-* Dinner
-* 6:00 PM Keynote Lecture 1: Invited Speaker Joie Cannon
+Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.weebly.com/uploads/7/4/8/7/74870527/giga_iii_draft_program_4_october_2018.pdf) 
 
-### Day 2 (Oct 20)
+### Day 2 (Oct 20) - Bioinformatics workshop, Blenchi Room
 
-* 8:30 AM - BASH primer: Sevigny
-* [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html)
+* 8:30 AM - 10:30 AM [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html), 
+Command line/BASH primer: Sevigny
+* 10:30 - 11:00 AM Coffee Break
+* 11:00 - 12:30 PM Annotation/Assembly
+* 12:30 - 1:30 PM Lunch
+* 1:30 - 3:30 PM Annotation/Assembly
+* 3:30 - 4:00 PM Coffee Break
+* 4:00 - 6:00 PM Annotation/Assembly
 
+### Day 3 (Oct 21) - Bioinformatics workshop, Blenchi Room
 
+* 8:30 AM - 10:30 AM Annotation/Assembly
+* 10:30 - 11:00 AM Coffee Break
+* 11:00 - 12:30 PM QIIME2 
+* 12:30 - 1:30 PM Lunch
+* 1:30 - 3:30 PM QIIME2
+* 3:30 - 4:00 PM Coffee Break
+* 4:00 - 6:00 PM QIIME2
