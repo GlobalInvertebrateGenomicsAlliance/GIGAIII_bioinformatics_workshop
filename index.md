@@ -27,8 +27,8 @@ Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.wee
 
 ### Day 2 (Oct 20) - Bioinformatics workshop, Blenchi Room
 
-* 8:30 AM - 10:30 AM Command line/BASH primer: Sevigny
-* [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html)
+* 8:30 AM - 10:30 AM [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html), 
+Command line/BASH primer: Sevigny
 * 10:30 - 11:00 AM Coffee Break
 * 11:00 - 12:30 PM Annotation/Assembly
 * 12:30 - 1:30 PM Lunch
