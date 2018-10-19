@@ -16,6 +16,10 @@ Instructors:
 * [Joseph Sevigny](https://github.com/Joseph7e)
 * [Devin Thomas](https://hcgs.unh.edu/people)
 
+Notes from the course:
+
+[Hackmd](https://hackmd.io/Tw721pxaRhWipAwd6FpvsA)
+
 ### Day 0 (Oct 18) 
 
 Arrivals and check-in, Curaçao Hilton
