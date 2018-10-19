@@ -8,13 +8,13 @@ If you are not comfortable working on the command line, please work through some
 
 Instructors:
 
-* Titus Brown
-* Jean-Francois Flot
-* Bishoy Hanna
-* Lisa Johnson 
-* Adelaide Rhodes
-* Joseph Sevigny
-* Devin Thomas
+* [Titus Brown](http://ivory.idyll.org/lab/)
+* [Jean-Francois Flot](http://ebe.ulb.ac.be/ebe/Flot.html)
+* [Bishoy Hanna](http://bishoyh.github.io/) 
+* [Lisa Johnson](https://ljcohen.github.io/)
+* [Adelaide Rhodes](https://twitter.com/RareSeas)
+* [Joseph Sevigny](https://github.com/Joseph7e)
+* [Devin Thomas](https://hcgs.unh.edu/people)
 
 ### Day 0 (Oct 18) 
 
@@ -27,18 +27,19 @@ Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.wee
 
 ### Day 2 (Oct 20) - Bioinformatics workshop, Blenchi Room
 
-* 8:30 AM - 10:30 AM [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html), 
-Command line/BASH primer: Sevigny
+* 8:30 AM - Welcome, Introduction
+* 8:45 - [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html) (Johnson) 
+* 9:15 - Command line/BASH primer (Sevigny)
 * 10:30 - 11:00 AM Coffee Break
-* 11:00 - 12:30 PM Annotation/Assembly - Intro to hmmer and blast
+* 11:00 - 12:30 PM Annotation/Assembly - Intro to hmmer and blast (Rhodes)
 * 12:30 - 1:30 PM Lunch
-* 1:30 - 3:30 PM Annotation/Assembly - Assembly Primer (hands-on)
+* 1:30 - 3:30 PM Annotation/Assembly - Assembly Primer, hands-on (Flot)
 * 3:30 - 4:00 PM Coffee Break
-* 4:00 - 6:00 PM Annotation/Assembly - Assembly Practical
+* 4:00 - 6:00 PM Annotation/Assembly - Assembly Practical (Flot)
 
 ### Day 3 (Oct 21) - Bioinformatics workshop, Blenchi Room
 
-* 8:30 AM - 10:30 AM Annotation/Assembly - Gene Prediction & Discussion
+* 8:30 AM - 10:30 AM Annotation/Assembly - Gene Prediction & Discussion (Hanna)
 * 10:30 - 11:00 AM Coffee Break
 * 11:00 - 12:30 PM QIIME2 
 * 12:30 - 1:30 PM Lunch
