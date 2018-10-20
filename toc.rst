@@ -11,4 +11,8 @@ Table of Contents
 
    jetstream/boot.md
 
-   jetstream/login.md
+   login.md
+   
+   Lessons_Day_1/Introduction_to_Annotation_Rhodes.md
+   
+   RStudioserver.md
