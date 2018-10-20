@@ -92,7 +92,7 @@ Just wait! Don't reload or anything. When it is ready, the colored dot under "St
            
 ## Click on your new instance to get more information!
 
-Now, finally, you can login to the instance! Note that you'll need to download and use the private key file pinned in the #bioinfo-workshop-2018 channel in slack. The username will be either, e.g. `dibbears`, `diblions` or `dibtiger`. Use these log-in [instructions](login.html) for using a private-key.
+Now, finally, you can login to the instance! Note that you'll need to download and use the private key file pinned in the #bioinfo-workshop-2018 channel in slack. The username will be either, e.g. `dibbears`, `diblions` or `dibtiger`. Use these log-in [instructions](jetstream/login.html) for using a private-key.
 
 If you cannot access the terminal using the private key, a web shell is available:
 
