@@ -16,12 +16,12 @@ If we have time, we will discuss the annotation of noncoding regions.
 
 1.  Bugula neritina, "moss animals" 
 
-http://www.exoticsguide.org/bugula_neritina
-https://en.wikipedia.org/wiki/Bryozoa
+[http://www.exoticsguide.org/bugula_neritina](http://www.exoticsguide.org/bugula_neritina)
+[https://en.wikipedia.org/wiki/Bryozoa](https://en.wikipedia.org/wiki/Bryozoa)
 
 2.  Innate immune recogniation genes
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109969/
+[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109969/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109969/)
 
 MyD88
 Toll Interleukin Receptor Pathways (TIR, TLR)
@@ -33,7 +33,7 @@ etc., many more
 
 Let's create a file to test for the presence of MyD88
 
-1.) Navigate to http://uniprot.org
+1.) Navigate to [http://uniprot.org](http://uniprot.org)
 
 2.) Search for non-vertebrate, non-arthropod MyD88 proteins. 
 
@@ -50,11 +50,11 @@ Let's create a file to test for the presence of MyD88
 
 What is the Uniprot database?
 
-https://www.uniprot.org/downloads
+[https://www.uniprot.org/downloads](https://www.uniprot.org/downloads)
 
 What is MyD88?
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109969/
+[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109969/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109969/)
 
 
 ---
@@ -108,11 +108,11 @@ wget https://de.cyverse.org/dl/d/A47FAD90-1837-4868-8896-61231F14F779/genome_can
 
 ```
 
-***Protein to Protein searches are more efficient in Blast, so let's convert our genome into a set of proteins instead of nucleotides.***
+**Protein to Protein searches are more efficient in Blast, so let's convert our genome into a set of proteins instead of nucleotides.**
 
 We will use Transdecoder to do this.
 
-***What are some reasons why converting our raw scaffold into proteins will help us find our proteins?
+**What are some reasons why converting our raw scaffold into proteins will help us find our proteins?**
 
 1.) Load the program Transdecoder into our instance
 
@@ -142,7 +142,7 @@ TransDecoder.LongOrfs -t $REFERENCE
 
 ```
 
-#### Note: you can replace the demonstration reference with your genome for practice later on.  Using a variable called "reference" allows us to write code once and reuse it by just re-setting what we mean by "reference".  Using variables in your script can help you be more efficient as you can try multiple searches using the same script just by changing the reference, or feeding a list of reference genomes into your bash script.***
+#### Note: you can replace the demonstration reference with your genome for practice later on.  Using a variable called "reference" allows us to write code once and reuse it by just re-setting what we mean by "reference".  Using variables in your script can help you be more efficient as you can try multiple searches using the same script just by changing the reference, or feeding a list of reference genomes into your bash script.
 
 This can take up to an hour, so we need to stop the program prematurely.  It won't hurt anything, so just hit Control-C after a few minutes.
 
@@ -192,7 +192,7 @@ blastp -query ~/annotation/MyD88.fasta -db Bugula.pep -outfmt 6 -evalue 1e-5 -ou
 ```
 #### Note: outfmt6 is a very versatile tool that can be used to output your gene hits as a table, read more about it here:
 
-https://www.ncbi.nlm.nih.gov/books/NBK279682/
+[https://www.ncbi.nlm.nih.gov/books/NBK279682/](https://www.ncbi.nlm.nih.gov/books/NBK279682/)
 
 This should be a rather short blast operation, because we only have a few sequences.
 
@@ -200,7 +200,7 @@ This should be a rather short blast operation, because we only have a few sequen
 
 ### Let's try a probabilistic approach with HMMER (HMMER: biosequence analysis using profile hidden Markov models)
 
-http://eddylab.org/software/hmmer/Userguide.pdf
+[http://eddylab.org/software/hmmer/Userguide.pdf](http://eddylab.org/software/hmmer/Userguide.pdf)
 
 HMMER is a program that uses hidden markov profiles to predict the probability that two proteins are related.
 
@@ -284,7 +284,7 @@ hmmscan --domtblout Bugula.MyD88.domtblout MyD88.hmm Bugula.pep
 
 ```
 
-Look at the results in the Bugula.MyD88.domtblout
+Look at the results in the `Bugula.MyD88.domtblout`
 
 Are there any potential matches to our hmm model?
 
@@ -302,8 +302,8 @@ This involves downloading some freely available databases curated by the scienti
 
 We are going to download two databases and put them in our computers for searching.
 
-Pfam is described here: https://pfam.xfam.org/
-Swissprot is described here:  https://www.uniprot.org/help/uniprotkb_sections
+Pfam is described here: [https://pfam.xfam.org/](https://pfam.xfam.org/)
+Swissprot is described here: [https://www.uniprot.org/help/uniprotkb_sections]()
 
 ## Install databases
 
