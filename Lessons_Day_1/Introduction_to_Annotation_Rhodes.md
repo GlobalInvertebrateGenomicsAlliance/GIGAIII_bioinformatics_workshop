@@ -43,7 +43,7 @@ Let's create a file to test for the presence of MyD88
     D.) Return to main screen and choose "download" and format Fasta (canonical)
     E.) Copy and paste the text directly into the terminal or make a file on your desktop using notepad.
     
-### Note: don't use Microsoft word for text copy/paste for command line, it adds hidden characters which will mess up the code.
+**Note: don't use Microsoft word for text copy/paste for command line, it adds hidden characters which will mess up the code.**
 
 3.) Make a text file that holds the resulting fasta sequences for use in a few minutes.  For this demo, call it MyD88.fasta
 
@@ -141,7 +141,7 @@ TransDecoder.LongOrfs -t ~/annotation/genome_canu_filtered.fasta
 
 ```
 
-#### Note: you can replace the demonstration reference with your genome for practice later on.  Using a variable called "reference" allows us to write code once and reuse it by just re-setting what we mean by "reference".  Using variables in your script can help you be more efficient as you can try multiple searches using the same script just by changing the reference, or feeding a list of reference genomes into your bash script.
+**Note: you can replace the demonstration reference with your genome for practice later on.  Using a variable called "reference" allows us to write code once and reuse it by just re-setting what we mean by "reference".  Using variables in your script can help you be more efficient as you can try multiple searches using the same script just by changing the reference, or feeding a list of reference genomes into your bash script.**
 
 This can take up to an hour, so we need to stop the program prematurely.  It won't hurt anything, so just hit Control-C after a few minutes.
 
@@ -154,7 +154,7 @@ First, install the blast tools set from NCBI:
 sudo apt install ncbi-blast+
 
 ```
-#### Note: using sudo is usually reserved for machine owners.  In this course, we can install programs because we make our own machines.  This will not work if you are on a privately managed server, such as a university HPC.  Please consult with your system administrators on best practices for installing programs.
+**Note: using sudo is usually reserved for machine owners.  In this course, we can install programs because we make our own machines.  This will not work if you are on a privately managed server, such as a university HPC.  Please consult with your system administrators on best practices for installing programs.**
 
 Check the install.
 
@@ -172,9 +172,9 @@ cp ~/annotation/$REFERENCE.transdecoder_dir.__checkpoints_longorfs/longest_orfs.
 
 ```
 
-#### Note: your directory name may be slightly different, use ls to see whusing at the directory name is before the copy
+**Note: your directory name may be slightly different, use ls to see whusing at the directory name is before the copy**
 
-#### If you could not get Transdecoder to run, here is a version longest_orfs.pep you can upload into your annotation directory.
+**If you could not get Transdecoder to run, here is a version longest_orfs.pep you can upload into your annotation directory.**
 
 ```
 cd ~/annotation
@@ -198,13 +198,13 @@ makeblastdb -in longest_orfs.pep -dbtype prot -title Bugula.pep -out Bugula.pep
 blastp -query ~/annotation/MyD88.fasta -db Bugula.pep -outfmt 6 -evalue 1e-5 -out blastp.MyD88.Bugula.pep.outfmt6
 
 ```
-#### Note: outfmt6 is a very versatile tool that can be used to output your gene hits as a table, read more about it here:
+**Note: outfmt6 is a very versatile tool that can be used to output your gene hits as a table, read more about it here:**
 
 [https://www.ncbi.nlm.nih.gov/books/NBK279682/](https://www.ncbi.nlm.nih.gov/books/NBK279682/)
 
 This should be a rather short blast operation, because we only have a few sequences.
 
-***Did you get any results at all?
+**Did you get any results at all?**
 
 ### Let's try a probabilistic approach with HMMER (HMMER: biosequence analysis using profile hidden Markov models)
 
@@ -223,7 +223,7 @@ We are going to do approach #2 first.
 
 We have a set of data already that we can create our own hmm profile from, the MyD88 set of data.
 
-##Install hmmer and muscle
+## Install hmmer
 
 ```
 
@@ -306,7 +306,7 @@ We are going to stick with proteins, so please be aware that many items in our g
 
 This involves downloading some freely available databases curated by the scientific community.
 
-***Why is a curated database a good first pass for searching for gene names?
+**Why is a curated database a good first pass for searching for gene names?**
 
 We are going to download two databases and put them in our computers for searching.
 
