@@ -45,8 +45,8 @@ Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.wee
 
 * 8:30 AM - 10:30 AM Annotation/Assembly - Gene Prediction & Discussion (Hanna)
 * 10:30 - 11:00 AM Coffee Break
-* 11:00 - 12:30 PM QIIME2 
+* 11:00 - 12:30 PM [QIIME2](qiime2/18S.html) 
 * 12:30 - 1:30 PM Lunch
-* 1:30 - 3:30 PM QIIME2
+* 1:30 - 3:30 PM [QIIME2](qiime2/18S.html)
 * 3:30 - 4:00 PM Coffee Break
-* 4:00 - 6:00 PM QIIME2
+* 4:00 - 6:00 PM [QIIME2](qiime2/18S.html)
