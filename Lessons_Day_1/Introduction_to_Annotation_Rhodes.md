@@ -136,9 +136,8 @@ If not, retry the install.
 
 ```
 
-export REFERENCE="~/annotation/genome_canu_filtered.fasta"
 
-TransDecoder.LongOrfs -t $REFERENCE
+TransDecoder.LongOrfs -t ~/annotation/genome_canu_filtered.fasta
 
 ```
 
@@ -174,6 +173,15 @@ cp ~/annotation/$REFERENCE.transdecoder_dir.__checkpoints_longorfs/longest_orfs.
 ```
 
 #### Note: your directory name may be slightly different, use ls to see whusing at the directory name is before the copy
+
+#### If you could not get Transdecoder to run, here is a version longest_orfs.pep you can upload into your annotation directory.
+
+```
+cd ~/annotation
+
+wget https://de.cyverse.org/dl/d/24F8DAC4-0DA7-4A45-945C-E5E36DEFAEA7/Bugula.pep
+
+```
 
 2.) Make a blast database of the genome for searching.
 
@@ -303,7 +311,7 @@ This involves downloading some freely available databases curated by the scienti
 We are going to download two databases and put them in our computers for searching.
 
 Pfam is described here: [https://pfam.xfam.org/](https://pfam.xfam.org/)
-Swissprot is described here: [https://www.uniprot.org/help/uniprotkb_sections]()
+Swissprot is described here: [https://www.uniprot.org/help/uniprotkb_sections](https://www.uniprot.org/help/uniprotkb_sections)
 
 ## Install databases
 
