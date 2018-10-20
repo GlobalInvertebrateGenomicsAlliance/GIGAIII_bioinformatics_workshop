@@ -14,6 +14,10 @@ Some of the details may vary -- for example, if you have your own XSEDE
 account, you may want to log in with that -- and the name of the operating
 system or "Image" may also vary from "Ubuntu 18.04" or "DIBSI 2018" depending on the workshop.
 
+### Resources
+
+If you are interested in applying for Jetstream allocation credits, that is great! [Here](https://github.com/ljcohen/jetstream-xsede-illo/blob/master/xsede_applications/gigaiii.md) is our proposal that we submitted for this workshop. There are several types of allocations, [education](https://portal.xsede.org/allocations/education) (which we applied for), [start-up](https://portal.xsede.org/allocations/startup) and [research](https://portal.xsede.org/allocations/research). [Here](https://github.com/ljcohen/jetstream-xsede-illo/tree/master/xsede_applications) is a collection of successful proposals for all three types. We have found the process to be very easy. Start-up allocations for ~50,000 SU come before applying for full research allocations.
+
 -----
 
 First, go to the Jetstream application at [https://use.jetstream-cloud.org/application](https://use.jetstream-cloud.org/application).
