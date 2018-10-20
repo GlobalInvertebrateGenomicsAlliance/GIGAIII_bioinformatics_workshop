@@ -1,20 +1,22 @@
 # Booting a Jetstream Computer Instance for your use!
 
-What we're going to do here is walk through starting up a running
-computer (an "instance") on the Jetstream service. 
+What we're going to do here is walk through starting up a computer (an "instance") on the Jetstream service. 
 * Jetstream is run by NSF and provides elastic cloud computing services. 
 * "Cloud" computing is a fancy word for being allowed to temporarily use someone else's computer somewhere else with full administrative privaleges to install whatever software we want. 
 * Sometimes we need to use computing resources that are larger than our personal computers. Cloud computing lets us decide how much capacity we want to be using. 
 
 If you would like to read more about cloud computing, see this [Carpentry Cloud Computing lesson](http://www.datacarpentry.org/cloud-genomics/01-why-cloud-computing/).
 
-Below, we've provided screenshots of the whole process. You can click
-on them to zoom in a bit.  The important areas to fill in are circled
+Below, we've provided screenshots of the whole process. The important areas to fill in are circled
 in red or pointed out with arrows.
 
 Some of the details may vary -- for example, if you have your own XSEDE
 account, you may want to log in with that -- and the name of the operating
 system or "Image" may also vary from "Ubuntu 18.04" or "DIBSI 2018" depending on the workshop.
+
+### Resources
+
+If you are interested in applying for Jetstream allocation credits, that is great! [Here](https://github.com/ljcohen/jetstream-xsede-illo/blob/master/xsede_applications/gigaiii.md) is our proposal that we submitted for this workshop. There are several types of allocations, [education](https://portal.xsede.org/allocations/education) (which we applied for), [start-up](https://portal.xsede.org/allocations/startup) and [research](https://portal.xsede.org/allocations/research). [Here](https://github.com/ljcohen/jetstream-xsede-illo/tree/master/xsede_applications) is a collection of successful proposals for all three types. We have found the process to be very easy. Start-up allocations for ~50,000 SU come before applying for full research allocations.
 
 -----
 
@@ -41,12 +43,11 @@ Fill in the username and then the password (which we will tell you in class).
 
 ## Select Projects and "Create New Project"
 
-Now, this is something you only need to once if you have your own
-account - but if you're using a shared account like tx160085, you will
+Now, this is something you only need to do once if you have your own
+account - but if you're using a shared account like `dibbears`, you will
 need a way to keep your computers separate from everyone else's.
 
-We'll do this with Projects, which give you a bit of a workspace in which
-to keep things that belong to "you".
+We'll do this with Projects to keep things that belong to you.
 
 Click on "Projects" up along the top.
 
@@ -54,8 +55,7 @@ Click on "Projects" up along the top.
            
 ## Name the project for yourself, click "create"
 
-Enter your name into the Project Name, and something simple like "ANGUS"
-into the description. Then click 'create'.
+Enter your name into the Project Name, and something simple like "GIGA bioinfo" into the description. Then click 'create'.
 
 ![foo](images/login-6.thumb.png)
 
@@ -67,10 +67,9 @@ Select
 
 ## Find the "DIBSI 2018 workshop image" image, click on it
 
-Enter "DIBSI" into the search bar - make sure it's from
-June 22nd, 2018 by Titus. This images is based on Ubuntu 18.04 devel and docker, with Rstudio and [bioconda](https://bioconda.github.io/) package manager added.
+Enter "DIBSI" into the search bar. Make sure the 'Show All' tab is selected. Make sure it's from June 22nd, 2018 by Titus Brown. This images is based on Ubuntu 18.04 devel and docker, with Rstudio and [bioconda](https://bioconda.github.io/) package manager added. Instructions for how Titus set this up are [here](https://angus.readthedocs.io/en/2018/jetstream-bioconda-config.html).
 
-Here, "image" refers to the resources that are pre-loaded into your computing workspace on your instance. Think of it like apps that come with your phone before you add new ones on your own. Loading the DIBSI image Titus built before the workshop prevents us from having to choose our operating distrubution and download frequently-used packages on our own, and makes sure that everyone at ANGUS has the same basic computing environment. That ensures that the commands we tell you to use will work, and makes it easier for TAs to figure out what's wrong if you run into error messages.
+An "image" refers to the resources that are pre-loaded into your computing workspace on your instance. Think of it like apps that come with your phone before you add new ones on your own. Loading the DIBSI image that Titus built before the workshop prevents us from having to choose our operating distrubution and download frequently-used packages on our own, and makes sure that everyone has the same basic computing environment. That ensures that the commands we tell you to use will work, and makes it (slightly) easier for TAs to figure out what's wrong if you run into error messages.
 
 ![foo](images/Image_Search.thumb.png)
            
@@ -80,8 +79,7 @@ Launch
 
 ## Name it something simple
 
-Change the name after what we're doing - "Day1_workshop_tutorial", for example,
-but it doesn't matter. Pull down the drop-down menu under 'Project' to select your name. Then make sure the appropriate Resources are selected. You probably won't have to change these. The 'Allocation Source' will already be selected. (This is our XSEDE allocation grant ID.) The 'm1.medium' instance size will already be chosen. This is the minimum instance size. A larger instance can be selected, depending on what we will be doing. The 'Provider' will be randomly chosen as either 'Jetstream - Indiana University' or 'Jetstream - TACC'.
+Change the name after what we're doing - "Day1_workshop_tutorial", for example, but it doesn't matter. Pull down the drop-down menu under 'Project' to select your name. Then make sure the appropriate Resources are selected. You probably won't have to change these. The 'Allocation Source' will already be selected. (This is our XSEDE allocation grant ID.) The 'm1.medium' instance size will already be chosen. This is the minimum instance size. A larger instance can be selected, depending on what we will be doing. The 'Provider' will be randomly chosen as either 'Jetstream - Indiana University' or 'Jetstream - TACC'.
 
 ![foo](images/Launch_Instance.thumb.png)
 
@@ -94,8 +92,7 @@ Just wait! Don't reload or anything. When it is ready, the colored dot under "St
            
 ## Click on your new instance to get more information!
 
-Now, you can login to the instance! Note that you'll need to use the private key
-file located in the #general channel in slack. The username will be specific to your classroom, e.g. `dibbears`, `diblions` or `dibtiger`. Use these log-in [instructions](https://angus.readthedocs.io/en/2018/jetstream/login.html) for using a private-key.
+Now, finally, you can login to the instance! Note that you'll need to download and use the private key file pinned in the #bioinfo-workshop-2018 channel in slack. The username will be either, e.g. `dibbears`, `diblions` or `dibtiger`. Use these log-in [instructions](login.html) for using a private-key.
 
 If you cannot access the terminal using the private key, a web shell is available:
 
