@@ -35,7 +35,7 @@ Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.wee
 * 8:45 - [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html) and [RStudio Server](RStudioserver.html) (Johnson) 
 * 9:15 - Command line/BASH primer (Sevigny)
 * 10:30 - 11:00 AM Coffee Break
-* 11:00 - 12:30 PM Annotation/Assembly - [Intro to hmmer and blast](Lessons_Day_1/Introduction_to_Annotation_Rhodes.md) (Rhodes)
+* 11:00 - 12:30 PM Annotation/Assembly - [Intro to hmmer and blast](Lessons_Day_1/Introduction_to_Annotation_Rhodes.html) (Rhodes)
 * 12:30 - 1:30 PM Lunch
 * 1:30 - 3:30 PM Annotation/Assembly - Assembly Primer, hands-on (Flot)
 * 3:30 - 4:00 PM Coffee Break
