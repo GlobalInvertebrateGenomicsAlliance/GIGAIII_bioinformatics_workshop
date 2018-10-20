@@ -32,7 +32,7 @@ Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.wee
 ### Day 2 (Oct 20) - Bioinformatics workshop, Blenchi Room
 
 * 8:30 AM - Welcome, Introduction
-* 8:45 - [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html) (Johnson) 
+* 8:45 - [Booting from Jetstream](https://gigaiii-bioinformatics-workshop.readthedocs.io/en/latest/jetstream/boot.html) and [RStudio Server](RStudioserver.html) (Johnson) 
 * 9:15 - Command line/BASH primer (Sevigny)
 * 10:30 - 11:00 AM Coffee Break
 * 11:00 - 12:30 PM Annotation/Assembly - [Intro to hmmer and blast](Lessons_Day_1/Introduction_to_Annotation_Rhodes.md) (Rhodes)
