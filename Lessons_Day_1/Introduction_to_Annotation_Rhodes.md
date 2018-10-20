@@ -290,24 +290,56 @@ Are there any potential matches to our hmm model?
 
 ---
 
-##Predict multiple genes simultaneously
+## Predict multiple genes simultaneously
 
 It can take a lot of time to do multiple sequence alignments for individual genes, so we are going to switch to using a reference hmm profile to annotate all the orf's in our genome.
 
 We are going to stick with proteins, so please be aware that many items in our genome will not be annotated.
 
+This involves downloading some freely available databases curated by the scientific community.
+
+***Why is a curated database a good first pass for searching for gene names?
+
+We are going to download two databases and put them in our computers for searching.
+
+Pfam is described here: https://pfam.xfam.org/
+Swissprot is described here:  https://www.uniprot.org/help/uniprotkb_sections
+
+## Install databases
+
 ```
-hmmscan --domtblout Bugula.All.domtblout /home/data/rseas/Pfam-A.hmm Bugula.pep
+cd ~
+
+mkdir databases
+
+cd ~/databases
+
+wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+
+gunzip Pfam-A.hmm.gz
+
+wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+
+gunzip uniprot_sprot.fasta.gz
+
+```
+
+Now we are ready to search all of our genome peptides using hmmer agains the Pfam database that has already been pressed into a hmmer searchable table.
+
+
+```
+cd ~/annotation
+hmmscan --domtblout Bugula.All.domtblout ~/databases/Pfam-A.hmm Bugula.pep
 
 ```
 
 This can be interrupted and the file can be read without hurting anything.  So let the program run for a little while then hit Control-C.
 
-We can do the same using blast.
+We can do the same using blast against the swissprot fasta.  Basically, any fasta can be searched against another fasta.
 
 ```
 
-blastp -query Bugula.pep -db /home/data/rseas/uniprot_sprot.fasta  -max_target_seqs 1  -outfmt 6 -evalue 1e-5  > Bugula.swissprot.blastp.outfmt6
+blastp -query Bugula.pep -db ~/database/uniprot_sprot.fasta  -max_target_seqs 1  -outfmt 6 -evalue 1e-5  > Bugula.swissprot.blastp.outfmt6
  
 ```
 
