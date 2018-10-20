@@ -43,7 +43,8 @@ Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.wee
 
 ### Day 3 (Oct 21) - Bioinformatics workshop, Blenchi Room
 
-* 8:30 AM - 10:30 AM Annotation/Assembly - Gene Prediction & Discussion (Hanna)
+* 8:30 AM - 10:30 AM Annotation/Assembly - [Gene Prediction](geneprediction/shortcut.html)
+       & Discussion (Hanna)
 * 10:30 - 11:00 AM Coffee Break
 * 11:00 - 12:30 PM [QIIME2](qiime2/18S.html) 
 * 12:30 - 1:30 PM Lunch
