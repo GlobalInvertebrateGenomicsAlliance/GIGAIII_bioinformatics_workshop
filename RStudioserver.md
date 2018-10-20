@@ -1,6 +1,6 @@
 # Starting R Studio Server
 
-R Studio server launches [R Studio](https://www.rstudio.com/) in your web browser. This also enables visualization and interaction with files on your instance.
+R Studio server launches [R Studio](https://www.rstudio.com/products/rstudio/#Server) in your web browser. This also enables visualization and interaction with files on your instance.
 
 We have already installed R Studio on your instance ('DIBSI 2018 workshop' image).
 
