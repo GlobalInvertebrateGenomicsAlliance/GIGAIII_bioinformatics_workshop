@@ -19,7 +19,7 @@ Set the password to something simple! (You will not need this again once you del
 
 Now go to that Web address in your Web browser, and log in with the username and password from above.
 
-![](RStudioserver.png)
+![](jetstream/images/RStudioserver.png)
 
 
 
