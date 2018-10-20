@@ -39,7 +39,7 @@ Symposium and Contributed Talks - Please see [Final Program](https://gigaiii.wee
 * 12:30 - 1:30 PM Lunch
 * 1:30 - 3:30 PM Annotation/Assembly - Assembly Primer, hands-on (Flot)
 * 3:30 - 4:00 PM Coffee Break
-* 4:00 - 6:00 PM Annotation/Assembly - Assembly Practical (Flot)
+* 4:00 - 6:00 PM Annotation/Assembly - [Assembly Practical](https://github.com/jflot/ICME2019) (Flot)
 
 ### Day 3 (Oct 21) - Bioinformatics workshop, Blenchi Room
 
