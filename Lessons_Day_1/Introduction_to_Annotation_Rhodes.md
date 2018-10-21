@@ -187,7 +187,7 @@ wget https://de.cyverse.org/dl/d/24F8DAC4-0DA7-4A45-945C-E5E36DEFAEA7/Bugula.pep
 
 
 ```
-makeblastdb -in longest_orfs.pep -dbtype prot -title Bugula.pep -out Bugula.pep
+makeblastdb -in Bugula.pep -dbtype prot -title Bugula.pep -out Bugula.pep
 
 ```
 
