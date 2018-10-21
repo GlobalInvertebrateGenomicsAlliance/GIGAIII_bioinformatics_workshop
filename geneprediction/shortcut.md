@@ -18,7 +18,7 @@
 To install BUSCO which includes augustus run the following:
 
 ```bash
- conda install -c bioconda busco
+ conda install busco
  ```
 
 This should churn for a while, depending on how many other dependencies you already have on your system.
@@ -32,6 +32,8 @@ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/985/GCF_000002985.6_WBce
 ```
 
 You can substitute your own genome as well. This FASTA file should be either full chromosomes, scaffolds or contigs, depending on the current stage of your assembly. The quality of your predictions will depend on the quality of your assembly.
+
+gunzip your file if your file is gzipped
 
 ## Create files and folders
 
@@ -49,7 +51,7 @@ Type
 run_busco -h
 ```
 
-Examine the output and see what are the parameters needed
+Examine the output and see what are the parameters needed to run busco
 
 Download the needed dataset to predict in your particular genome, you should check the busco website in case the link below gets outdated as new ODB releases are made <https://busco.ezlab.org/>
 
@@ -75,7 +77,7 @@ Before running Busco OR augustus you need to configure the AUGUSTUS_CONFIG_PATH 
 ERROR   The environment variable AUGUSTUS_CONFIG_PATH is not set
 ```
 
-The AUGUSTUS_CONFIG_PATH will depend on how installed BUSCO/conda. In most cases it will be located in ~/miniconda3/config - if you used miniconda as your setup. In the Jetstream image we use, miniconda is installed in /opt/miniconda3 , thus the config folder will be /opt/miniconda3/config. However if you have other installations of augustus outside of conda you might have to specify that location. To know that you have found the correct Augustus config folder it will contain  these folders/files when you run ls inside it.
+The AUGUSTUS_CONFIG_PATH will depend on how installed BUSCO/conda. In most cases it will be located in ~/miniconda3/config - if you used miniconda as your setup. In the Jetstream image we use, miniconda is installed in /opt/miniconda , thus the config folder will be /opt/miniconda3/config. However if you have other installations of augustus outside of conda you might have to specify that location. To know that you have found the correct Augustus config folder it will contain  these folders/files when you run ls inside it.
 
 ```bash
 ls
@@ -93,7 +95,7 @@ Now busco can run without complaining, note that in the future Bioconda might se
 
 ```bash
 # Run Busco
-run_busco -i genome.fasta -c 6 -l eukaryota_odb9 -o genome_euk
+run_busco -i genome.fasta -c 6 -l eukaryota_odb9 -o genome_euk -m genome
 ```
 
 What are these options?
@@ -102,6 +104,7 @@ What are these options?
 - -c , number of cores, adjust accordingly
 - -l , where you extracted your busco ortholog set e.g. eukaryota_odb9
 - -o , where to store the output of the run
+- -m , mode to run in our case genome -
 
 The error below occurs sometimes, the solution is to run with less or no threads
 
@@ -142,8 +145,9 @@ To create a training and testing dataset from one genbank file use the `randomSp
 
 First count how many genes are in the training dataset by using - which counts how many "//" is in the Genbank file which is the record delimiter for genbank files
 
+training_set.txt will differ based on how you named your busco run
 ```bash
-grep -c "//"
+grep -c "//" training_set.txt
 
 ```
 
@@ -155,7 +159,7 @@ The command to split the file into a training and testing set is:
 
 ```bash
 # change 400 to 50% of your trainingset
-randomSplit trainingset.gb 400
+randomSplit.pl trainingset.gb 400
 ```
 
 If you get this error
@@ -241,7 +245,7 @@ To work around this, run the following command, you must have the GNU parallel i
 
 ```bash
 
-(find -name aug*  -type f | parallel -j1 cat {}';'echo ) > AllCommands
+(find -name "aug*"  -type f | parallel -j1 cat {}';'echo ) > AllCommands
 
 ```
 
@@ -287,6 +291,8 @@ You can run optimize_augustus.pl using more cpus, however make sure the perl dep
 ```bash
 optimize_augustus.pl --cpus=6 --species=C_elegansBUSCO TrainingSet.gb.train
 ```
+
+After the `optimize_augustus.pl` is finished re-run the `etraining` command again to utilize the new augustus metaparameters
 
 ## Additional Resources
 
